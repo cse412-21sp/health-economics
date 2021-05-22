@@ -1,20 +1,23 @@
-[meta title:"CSE412 Final Project" description:"The initial template for the CSE412 Final Projects (Spring 2021)" /]
+[meta title:"CSE412 Final Project" /]
 
 [Header
   fullWidth:true
   title:"The Impacts of Health Expenditure"
   subtitle:"First Draft"
-  author:"Arnav J., Suchitra G., Hienschi N., Sahana S. "
+  author:"Suchitra G., Arnav J., Hienschi N., Sahana S. "
   date:"May 21, 2021"
   background:"#33333f"
   color:"#ffffff"
    /]
 # Abstract
-This article analyzes health  economics, primarily focusing on healthcare expenditure and its impact. This was analyzed through a global perspective. Some of the aspects of health economics included are:  global analysis of health expenditures, current global status on emphasis on health, costs of medicine, and hospital access.
+This article analyzes health  economics, primarily focusing on healthcare expenditure and its impact.
+This was analyzed through a global perspective. Some of the aspects of health economics included are:
+global analysis of health expenditures, current global status on emphasis on health, costs of medicine,
+and hospital access.
 
-Our motivation for this project is to inform the general population for future decision making processes regarding health. If they can see the impact of healthcare expenditure, the general population will be able to make informed decisions that may improve the situation overall.
-
- [Idyll](https://idyll-lang.org/docs), which is a markup language for creating beautiful interactive webpages. For your own webpage, you can customize the particular components and layouts that are used, but the style of the overall page is predefined by our course theme. 
+Our motivation for this project is to inform the general population for future decision making processes
+regarding health. If they can see the impact of healthcare expenditure, the general population will be 
+able to make informed decisions that may improve the situation overall.
 
 ## Medical Expenditure in a Global Perspective
 
@@ -85,18 +88,21 @@ This may be most due to policy reasons.
 ## Impacts of Health Expenditure on Hospital Access
 
 ![example](./static/images/1_distribution.png)
+
 The first visualization provides an overview of the number of hospital locations across 
 different U.S states. The static image displays the U.S map and uses size as a visual 
 encoding variable to demonstrate the number of hospital locations in each state. 
 Markings of the magnitude of hospital locations are also provided for easy access. 
 
 ![example](./static/images/2_Costs.png)
+
 This visualization also uses the location (latitude and longitude) of each U.S state
 and uses color as a visual encoding variable to represent the net cost of living index
 in each state. The increasing hue on the color scale indicates a net higher cost of
 living index for that case 
 
-![example](./static/images/1_Correlation.png)
+![example](./static/images/3_Correlation.png)
+
 For this visualization, the question we are trying to answer is whether there is a 
 correlation between the cost of living index and number of hospital locations for each state. 
 In order to plot this, I used a simple scatter plot with markings for the names of each state 
@@ -106,4 +112,4 @@ the access to healthcare facilities in these states.
 
 #### Acknowledgements
 
-This template was adapted from the initial Scrollytelling template for Idyll. The code and visualization examples were adapted from the [final project template](https://github.com/cse412-21w/project-demo) created for a previous offering of CSE 412.
+This template was adapted from the initial Scrollytelling template for Idyll. 
