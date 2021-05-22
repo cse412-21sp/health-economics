@@ -38,6 +38,7 @@ Some potential visualizations we can use are: maps showing the difference in hea
 ### Required Software
 
 You must have Node.js installed. You can get it directly from https://nodejs.org/en/.
+
 We highly suggest downloading Microsoft Visual Studio Code.
 
 ### Installation
@@ -48,9 +49,8 @@ We highly suggest downloading Microsoft Visual Studio Code.
 
 npm is the node package manager. If you're curious how this works and what the project dependencies are, open up `package.json` to see where these are listed.
 
-You can install custom dependencies by running `npm install <package-name> --save`. Note that any collaborators will also need to download the package locally by running `npm install` after pulling the changes.
-
+You can install custom dependencies by running `npm install <package-name> --save`. 
 
 #### Acknowledgements
 
-This template was adapted from the initial Scrollytelling template for Idyll. The code and visualization examples were adapted from the [final project template](https://github.com/cse412-21w/project-demo) created for a previous offering of CSE 412.
+This template was adapted from the initial Scrollytelling template for Idyll.
