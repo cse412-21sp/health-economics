@@ -21,11 +21,11 @@ able to make informed decisions that may improve the situation overall.
 
 ## Medical Expenditure in a Global Perspective
 
-As the health of their citizens is a priority for many countries, it’s natural that it would be part of each country’s total government expenditure. Prior to creating these visualizations we thought that countries that are commonly known to have universal healthcare such as Canada and much of the European Union would have much higher spending on healthcare than countries such as the United States. 
+As the health of their citizens is a priority for many countries, it’s natural that it would be part of 
+each country’s total government expenditure. Prior to creating these visualizations we thought that countries that are commonly known to have universal healthcare such as Canada and much of the European Union would have much higher spending on healthcare than countries such as the United States. 
 
-Creating this visualization caught us by surprise, as the United States’s spending on healthcare was on par with nations with universal healthcare in 2014. 
-
-We can easily embed images inline by including a short code snippet referencing an image file: `![example](./static/images/banner.png)`
+Creating this visualization caught us by surprise, as the United States’s spending on healthcare was 
+on par with nations with universal healthcare in 2014. 
 
 ![example](./static/images/by_Country_2014.png)
 
