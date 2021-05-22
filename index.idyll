@@ -18,9 +18,27 @@ Our motivation for this project is to inform the general population for future d
 
 ## Medical Expenditure in a Global Perspective
 
+As the health of their citizens is a priority for many countries, it’s natural that it would be part of each country’s total government expenditure. Prior to creating these visualizations we thought that countries that are commonly known to have universal healthcare such as Canada and much of the European Union would have much higher spending on healthcare than countries such as the United States. 
+
+Creating this visualization caught us by surprise, as the United States’s spending on healthcare was on par with nations with universal healthcare in 2014. 
+
 We can easily embed images inline by including a short code snippet referencing an image file: `![example](./static/images/banner.png)`
 
-![example](./static/images/banner.png)
+![example](./static/images/by_Country_2014.png)
+
+(Things we know we need to change: add a title, make this an actually interactive Tableau visualization) 
+
+Let’s also look at some trends in healthcare expenditure between the years 1994 and 2004. 
+
+Here are the trends in spending by location:
+
+![example](./static/images/location.png)
+
+(Things we know we need to change: add a title, not make the year have commas, define some of the regions) 
+
+Here is the healthcare expenditure by income groups (classified by the World Bank) 
+
+![example](./static/images/income_groups.png)
 
 #### Specifying data for dynamic Vega-Lite and D3 visualizations
 
