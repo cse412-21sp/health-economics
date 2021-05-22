@@ -12,11 +12,22 @@ Sahana Sundar
 
 ### Contribution Statements
 
-Add individual contribution statements here.
+Suchitra Gopal - Visuals on impacts on health expenditure on hospital access
+
+Arnav Jolly - Visuals on emphasis on health based on GDP
+
+Hienschi Nguyen - Visuals on on health expenditure on medicine costs and uploading to Idyll
+
+Sahana Sundar - Visuals on global analsyis of health expenditure and template cleaning
 
 ## Project Proposal Abstract
 
-This is the space for you to add a description for your project.
+Our  group  is interested in  analyzing  health  economics, primarily focusing on healthcare expenditure and its impact. We are currently looking at this through a global perspective but after our exploratory data analysis, we may choose to focus on a few specific countries for this project. Some of the aspects of health economics that we are currently thinking about including in our final project is: access to hospitals, access to medication/pharmacies, insurance costs and coverage and patient health outcomes for which we have identified relevant datasets.  
+
+Our motivation for this project is to construct effective visualizations to  make the data clear to the general population for decision making processes. If they can see the impact of healthcare expenditure, they will be able to make informed decisions that may improve the situation overall.
+
+Some potential visualizations we can use are: maps showing the difference in health expenditure impact around the world, scatter/line plots that will show the trends over time, and bar graphs to compare data  of different regions of differing economic development.
+
 
 ## Getting Started
 
