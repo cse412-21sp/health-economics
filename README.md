@@ -2,9 +2,13 @@
 
 ## Team Members
 
-Arnav 
+Suchitra Gopal
+
+Arnav Jolly
+
 Hienschi Nguyen
 
+Sahana Sundar
 
 ### Contribution Statements
 
