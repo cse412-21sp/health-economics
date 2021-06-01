@@ -9,27 +9,149 @@
   background:"#33333f"
   color:"#ffffff"
    /]
-# Abstract
-This article analyzes health  economics, primarily focusing on healthcare expenditure and its impact.
-This was analyzed through a global perspective. Some of the aspects of health economics included are:
-global analysis of health expenditures, current global status on emphasis on health, costs of medicine,
-and hospital access.
 
-Our motivation for this project is to inform the general population for future decision making processes
-regarding health. If they can see the impact of healthcare expenditure, the general population will be 
-able to make informed decisions that may improve the situation overall.
+Health expenditure is defined as any private or public spending relating to improving the healthcare of a 
+population, and this entails both preventative and treatment measures. Intuitively, it may seem like 
+higher rates of healthcare expenditure, particularly in the public sector, leads to better health 
+outcomes, but it’s a bit more complicated than that. 
 
-## Medical Expenditure in a Global Perspective
+This set of visualizations aims to identify the impact of health expenditure on health outcomes on 
+the following three levels: as a percentage of total government expenditure, the costs of medicine 
+and hospital access. We will be focusing on the US with a global perspective. 
 
-As the health of their citizens is a priority for many countries, it’s natural that it would be part of 
-each country’s total government expenditure. Prior to creating these visualizations we thought that countries that are commonly known to have universal healthcare such as Canada and much of the European Union would have much higher spending on healthcare than countries such as the United States. 
+## Global Context of Health
 
-Creating this visualization caught us by surprise, as the United States’s spending on healthcare was 
-on par with nations with universal healthcare in 2014. 
+To get a global view of healthcare expenditure, it is useful to see the expenditure of each of the 
+global region as defined by the World Health Organization, which are defined as follows: 
 
-![example](./static/images/by_Country_2014.png)
+![example](./static/images/1a.png)
+
+![example](./static/images/2a.png)
+
+![example](./static/images/2b.png)
+Health expenditure fluctuated to varying degrees in each region between the years of 1995 - 2014 
+but overall a larger proportion of government expenditure was dedicated to healthcare in 2014. 
+The only exception to this trend is the Western Pacific region, but the decrease in expenditure 
+was only 0.05% making the difference marginal.  The most significant increase was in the Americas 
+region which changed from 14.87% in 1995 to 18.07%.
+
+![example](./static/images/3.png)
+
+% of GDP due to healthcare expenditure is shown in this image. The darker the blue, the more percent 
+of GDP due to healthcare. The scale is shown in the image as well. Used World Indicators Data.
+
+As seen in the image above, more developed countries tend to have a greater percentage of GDP due to
+healthcare expenditure, with the US having the highest percentage. This makes sense, as more developed 
+countries tend to have more advanced technologies and better facilities for treatment, which tend to be 
+more expensive.
+
+## Impact of Hospital Access
+
+![example](./static/images/4.png)
+The first visualization is a representation of the overall healthcare expenditure across 12 countries 
+- United States, Canada, Australia, Sweden, United Kingdom, Japan, Belgium, Netherlands, Austria, France, 
+Germany, and Switzerland. 
+
+![example](./static/images/5.png)
+
+Looking at the healthcare expenditure per capita values for each of the countries above, it is clear that 
+the United States has the highest healthcare expenditure from a global standpoint.  
+To understand the impact of healthcare expenditure, we can compare it with the cost of living for each 
+of the countries being compared. The cost of living index is an indicator of how much goods and services 
+cost. 
+
+![example](./static/images/6.png)
+From this visualization it is clear that the US has the highest average healthcare expenditure per capita 
+with an average cost of living index. To further analyze how this high expenditure influences the 
+healthcare facilities available to people we can look at Hospital access vs cost of living (US states) 
+where # of hospital locations are a representation of the healthcare expenditure per capita. 
+
+## Impact of Health Costs via Health Expenditure 
+
+Universal Healthcare Coverage(UHC) is defined by the World Health Organization in which all citizens get 
+access to basic healthcare without incurring financial hardship. UHC is most commonly executed in some 
+countries as federally funded single payer healthcare systems, but can take other forms. A single payer 
+healthcare system consists of a single entity for each country that is responsible for financing the 
+health costs of all of their citizens and residents. 
+
+As the United States does not have universal healthcare in the form of a single payer system, our 
+healthcare system can be extremely complicated and expensive to navigate. Consequently this leads to 
+health inequities that aren’t seen at the same level in other developed countries with single payer 
+health systems. In recent years the push for healthcare reform in the US (like the growing Medicare for 
+All  movement) has made universal healthcare a prominent topic of discussion. 
+
+![example](./static/images/7.png)
+Prior to creating this visualization we had assumed that since the United States didn’t have universal 
+healthcare, it’s governmental expenditure on healthcare would be significantly lower than that of  
+countries with universal healthcare. However, public expenditure for healthcare is similar to countries 
+with healthcare systems that are globally seen as affordable and accessible such as the United Kingdom, 
+Canada and many of the countries from the European Union. Also if we look at the countries with the 
+highest healthcare expenditures from the government, we can see that they are from different regions, 
+sizes and income groups.  
+
+### Medicine Costs
+![example](./static/images/8.png)
+Since many European countries and Canada have universal healthcare but have a similar percentage of 
+spending on health expenditure as the United States, it brings the question whether the universal 
+healthcare system in the European countries and Canada reduced the cost of medicine or drugs. 
+According to an evaluation from the Organisation for Economic Co-operation and Development (OCDE), 
+the United States has over three times the price of patented medicine compared to Canada and European 
+countries for the year of 2019. This means despite having a similar percentage of on health expenditure, 
+the price of medicine is drastically different. However, another differing factor is the actual amount 
+being spent for each person in the population.
 
 [IdyllVegaLite actions:false spec: 
 `
 {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "circle", "size": 60}, "encoding": {"tooltip": [{"type": "nominal", "field": "Country"}, {"type": "quantitative", "field": "Health spending per capita"}], "x": {"type": "quantitative", "field": "Health spending per capita", "title": "Health Expenditure Per Capita in US Dollars"}, "y": {"type": "quantitative", "field": "Price Ratio", "title": "Medicine Price Ratio"}}, "title": "Developed Countries: Medicine Costs vs Health Expenditure"}, {"mark": "line", "encoding": {"tooltip": [{"type": "nominal", "field": "Country"}, {"type": "quantitative", "field": "Health spending per capita"}], "x": {"type": "quantitative", "field": "Health spending per capita", "title": "Health Expenditure Per Capita in US Dollars"}, "y": {"type": "quantitative", "field": "Price Ratio", "title": "Medicine Price Ratio"}}, "title": "Developed Countries: Medicine Costs vs Health Expenditure", "transform": [{"on": "Health spending per capita", "regression": "Price Ratio"}]}, {"data": {"name": "data-07d760eb78472f4b7e94fbfe9aab555a"}, "mark": {"type": "circle", "color": "orange", "size": 60}, "encoding": {"tooltip": [{"type": "nominal", "field": "Country"}, {"type": "quantitative", "field": "Health spending per capita"}, {"type": "quantitative", "field": "Price Ratio"}], "x": {"type": "quantitative", "field": "Health spending per capita", "scale": {"domain": [0, 11100]}}, "y": {"type": "quantitative", "field": "Price Ratio", "scale": {"domain": [0, 4]}}}}, {"data": {"name": "data-9327c7df96c880c4ec7a5c3e551e3109"}, "mark": {"type": "circle", "color": "red", "size": 60}, "encoding": {"tooltip": [{"type": "nominal", "field": "Country"}, {"type": "quantitative", "field": "Health spending per capita"}, {"type": "quantitative", "field": "Price Ratio"}], "x": {"type": "quantitative", "field": "Health spending per capita"}, "y": {"type": "quantitative", "field": "Price Ratio"}}}], "data": {"name": "data-a1c41be14e817144ab11cc3cdcda8c72"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-a1c41be14e817144ab11cc3cdcda8c72": [{"Country": "Canada", "Price Ratio": 1.0, "2019": "Canada", "GDP per capita": 51494.00932, "Health spending per capita": 5418.383000000001, "Universal Healthcare Country": "Canada", "pop2021": 38067.903, "Universal Healthcare": true}, {"Country": "Austria", "Price Ratio": 0.94, "2019": "Austria", "GDP per capita": 58942.64241, "Health spending per capita": 5851.055, "Universal Healthcare Country": "Austria", "pop2021": 9043.07, "Universal Healthcare": true}, {"Country": "Germany", "Price Ratio": 1.02, "2019": "Germany", "GDP per capita": 56305.204170000005, "Health spending per capita": 6645.757, "Universal Healthcare Country": "Germany", "pop2021": 83900.47300000001, "Universal Healthcare": true}, {"Country": "Switzerland", "Price Ratio": 1.02, "2019": "Switzerland", "GDP per capita": 73852.0879, "Health spending per capita": 7732.411999999999, "Universal Healthcare Country": "Switzerland", "pop2021": 8715.494, "Universal Healthcare": true}, {"Country": "Italy", "Price Ratio": 0.91, "2019": "Italy", "GDP per capita": 44217.70166, "Health spending per capita": 3649.2059999999997, "Universal Healthcare Country": "Italy", "pop2021": 60367.477, "Universal Healthcare": true}, {"Country": "New Zealand", "Price Ratio": 0.9, "2019": "New Zealand", "GDP per capita": 43740.62216, "Health spending per capita": 4203.9890000000005, "Universal Healthcare Country": "New Zealand", "pop2021": 4860.643, "Universal Healthcare": true}, {"Country": "Finland", "Price Ratio": 0.89, "2019": "Finland", "GDP per capita": 51414.029969999996, "Health spending per capita": 4578.42, "Universal Healthcare Country": "Finland", "pop2021": 5548.36, "Universal Healthcare": true}, {"Country": "Spain", "Price Ratio": 0.89, "2019": "Spain", "GDP per capita": 42170.62738, "Health spending per capita": 3616.4590000000003, "Universal Healthcare Country": "Spain", "pop2021": 46745.21599999999, "Universal Healthcare": true}, {"Country": "Sweden", "Price Ratio": 0.87, "2019": "Sweden", "GDP per capita": 55887.85655, "Health spending per capita": 5782.2919999999995, "Universal Healthcare Country": "Sweden", "pop2021": 10160.169, "Universal Healthcare": true}, {"Country": "Hungary", "Price Ratio": 0.84, "2019": "Hungary", "GDP per capita": 34502.977, "Health spending per capita": 2222.426, "Universal Healthcare Country": "Hungary", "pop2021": 9634.164, "Universal Healthcare": true}, {"Country": "Belgium", "Price Ratio": 0.83, "2019": "Belgium", "GDP per capita": 54900.13492999999, "Health spending per capita": 5427.956999999999, "Universal Healthcare Country": "Belgium", "pop2021": 11632.326000000001, "Universal Healthcare": true}, {"Country": "United Kingdom", "Price Ratio": 0.82, "2019": "United Kingdom", "GDP per capita": 48725.41977, "Health spending per capita": 4653.058, "Universal Healthcare Country": "United Kingdom", "pop2021": 68207.116, "Universal Healthcare": true}, {"Country": "Czech Republic", "Price Ratio": 0.8, "2019": "Czech Republic", "GDP per capita": 43301.12375, "Health spending per capita": 3427.91, "Universal Healthcare Country": "Czech Republic", "pop2021": 10724.555, "Universal Healthcare": true}, {"Country": "Luxembourg", "Price Ratio": 0.79, "2019": "Luxembourg", "GDP per capita": 120979.7044, "Health spending per capita": 5558.321999999999, "Universal Healthcare Country": "Luxembourg", "pop2021": 634.814, "Universal Healthcare": true}, {"Country": "Poland", "Price Ratio": 0.78, "2019": "Poland", "GDP per capita": 34055.26268, "Health spending per capita": 2229.601, "Universal Healthcare Country": "Poland", "pop2021": 37797.005, "Universal Healthcare": true}, {"Country": "Netherlands", "Price Ratio": 0.76, "2019": "Netherlands", "GDP per capita": 59512.48714, "Health spending per capita": 5765.098000000001, "Universal Healthcare Country": "Netherlands", "pop2021": 17173.099, "Universal Healthcare": true}, {"Country": "France", "Price Ratio": 0.73, "2019": "France", "GDP per capita": 49144.87104, "Health spending per capita": 5375.6990000000005, "Universal Healthcare Country": "France", "pop2021": 65426.179000000004, "Universal Healthcare": true}, {"Country": "Portugal", "Price Ratio": 0.72, "2019": "Portugal", "GDP per capita": 36579.19887, "Health spending per capita": 3378.627, "Universal Healthcare Country": "Portugal", "pop2021": 10167.925, "Universal Healthcare": true}, {"Country": "Australia", "Price Ratio": 0.7, "2019": "Australia", "GDP per capita": 54351.72955, "Health spending per capita": 5187.419, "Universal Healthcare Country": "Australia", "pop2021": 25788.215, "Universal Healthcare": true}, {"Country": "Greece", "Price Ratio": 0.67, "2019": "Greece", "GDP per capita": 30698.47133, "Health spending per capita": 2383.6279999999997, "Universal Healthcare Country": "Greece", "pop2021": 10370.744, "Universal Healthcare": true}, {"Country": "Slovenia", "Price Ratio": 0.66, "2019": "Slovenia", "GDP per capita": 40962.49748, "Health spending per capita": 3224.02, "Universal Healthcare Country": "Slovenia", "pop2021": 2078.724, "Universal Healthcare": true}, {"Country": "Estonia", "Price Ratio": 0.66, "2019": "Estonia", "GDP per capita": 38967.75359, "Health spending per capita": 2578.7929999999997, "Universal Healthcare Country": "Estonia", "pop2021": 1325.185, "Universal Healthcare": true}, {"Country": "Turkey", "Price Ratio": 0.29, "2019": "Turkey", "GDP per capita": 28424.254339999996, "Health spending per capita": 1337.174, "Universal Healthcare Country": "Turkey", "pop2021": 85042.73800000001, "Universal Healthcare": true}], "data-07d760eb78472f4b7e94fbfe9aab555a": [{"Country": "United States", "Price Ratio": 3.49, "2019": "United States", "GDP per capita": 65143.41552, "Health spending per capita": 10966.0, "Universal Healthcare Country": null, "pop2021": "NAN", "Universal Healthcare": false}], "data-9327c7df96c880c4ec7a5c3e551e3109": [{"Country": "Canada", "Price Ratio": 1.0, "2019": "Canada", "GDP per capita": 51494.00932, "Health spending per capita": 5418.383000000001, "Universal Healthcare Country": "Canada", "pop2021": 38067.903, "Universal Healthcare": true}]}}
 `/]
+
+A comparison of the individual European countries, Canada, and the United States. A trendline was made 
+for individual European countries. Health expenditure per capita and medicine price ratio are from 2019.
+
+Despite the United States spending nearly twice as much as Canada on health expenditure per capita, 
+the United States has three times the costs of medicine than Canada. However, looking at another lens 
+can make sense of this trend. A possibility is that because the cost of medicine is high, then the 
+country may have to invest more in health expenditure per capita. This can be seen in the positive 
+trend occurring with the individual European countries where the higher the spending in health per 
+capita, then the higher the drug price ratio. It was initially theorized that if a country doesn’t 
+spend a low amount of money on health expenditure, then the country may not be able to help the 
+population be able to afford medicine. Does the same theory apply to developing countries?
+
+![example](./static/images/10.png)
+CAPTION: A comparison of individual developing countries between their medicine price ratio and health expenditure per capita. 
+Data source from the World Health Organization (WHO) and World Bank. The median price ratio of generic 
+medicine is calculated dividing the median local countries unit price with the median international 
+reference unit price for 2007-2013. Health expenditure per capita and health expenditure by percentage 
+of GDP is from the year 2013. Comparison does not contain all developing countries.
+
+For developing countries, the trend from developed countries seems to not apply. Instead of seeing a 
+strong positive correlation between health expenditure and medicine price ratio, a lower variability is 
+seen with higher health expenditure in both per capita and percentage in GDP. An interesting outlier is 
+India which is 33.1 times higher than the international reference unit price of generic medicine. 
+Meanwhile, Indonesia has a low median price ratio of 1.8 despite having similar health expenditure as 
+India. The reasoning is outside just the numbers on health expenditure and more in depth of governmental 
+policies and perhaps medicine availability in that country. For instance, it wasn’t until 2014 India 
+started focusing on creating policies to help control drug prices. The data represented here was an 
+average pricing from 2007 to 2013.
+
+In regards to pricing of medicine, the United States government currently does not conduct direct 
+regulation or negotiation of drug prices. This could explain the high cost of medicine even with such 
+a high health expenditure budget.
+
+![example](./static/images/11.png)
+In the United States, wholesale acquisition costs (estimate of the manufacturer's list price for a drug to
+wholesalers or direct purchasers) of drugs that have been increasing in price have a consistent price 
+change. Every year since 2016, the costs of those drugs have increased at least 7% more than the 
+prior year. Other countries were shown to observe any possible impacts of imported drugs from the US 
+to countries like India, Canada, or the European Union. For the United States, Canada, and the European 
+Union, they show about 1% to 3% increase in health expenditure than its prior year from 2016-2019. India 
+has the highest increase in health expenditure but it also is showing less of increase from the year 
+2016 to 2019. 
+
+For comparing the changes in health expenditure of the US and the changes in increasing drug prices, 
+it seems not to have a significant impact as it does not follow the trend of changes in drug price. 
+The rationale is the drugs that have been increasing in price are most likely drugs not commonly 
+purchased by the public. This same rationale might apply or they have their own generic brand for 
+countries like Canada or the European Union that have their own regulation in pricing of medicine 
+to be affordable. Overall, health expenditure in the US is high partly from the contribution of 
+unregulated and higher priced medicine. 
