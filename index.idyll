@@ -27,18 +27,19 @@ global region as defined by the World Health Organization, which are defined as 
 
 ![example](./static/images/1a.png)
 
-![example](./static/images/2a.png)
+[fullWidth]
+[PlotlyEmbed link:"https://plotly.com/~SahanaSundar/2/" height:"800" width:"100%" /] 
+[/fullWidth]
 
-![example](./static/images/2b.png)
 Health expenditure fluctuated to varying degrees in each region between the years of 1995 - 2014 
 but overall a larger proportion of government expenditure was dedicated to healthcare in 2014. 
 The only exception to this trend is the Western Pacific region, but the decrease in expenditure 
 was only 0.05% making the difference marginal.  The most significant increase was in the Americas 
 region which changed from 14.87% in 1995 to 18.07%.
 
-![example](./static/images/3.png)
+[TableauEmbed link:"https://public.tableau.com/views/FinalProjectGDPHealth/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"500"/]
 
-*% of GDP due to healthcare expenditure is shown in this image. The darker the blue, the more percent 
+% of GDP due to healthcare expenditure is shown in this image. The darker the blue, the more percent 
 of GDP due to healthcare. The scale is shown in the image as well. Used World Indicators Data.*
 
 As seen in the image above, more developed countries tend to have a greater percentage of GDP due to
@@ -81,7 +82,8 @@ health inequities that aren’t seen at the same level in other developed countr
 health systems. In recent years the push for healthcare reform in the US (like the growing Medicare for 
 All  movement) has made universal healthcare a prominent topic of discussion. 
 
-![example](./static/images/7.png)
+[TableauEmbed link:"https://public.tableau.com/views/map2_16225939646530/wholeworld?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"500"/]
+
 Prior to creating this visualization we had assumed that since the United States didn’t have universal 
 healthcare, it’s governmental expenditure on healthcare would be significantly lower than that of  
 countries with universal healthcare. However, public expenditure for healthcare is similar to countries 
