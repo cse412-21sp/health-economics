@@ -15,9 +15,11 @@ This set of visualizations aims to identify the impact of health expenditure on 
 
 # Global Context of Health
 
-[div style:`{color: '#003366'}`]
+[div style:`{color: '#003366', backgroundColor: '#fbfbfb', padding: '5px'}`]
 ### “Developed countries tend to have higher percentages of GDP due to healthcare expenditure, with US having the highest percentage at 0.16% GDP”
 [/div]
+
+[br /] 
 
 To get a global view of healthcare expenditure, it is useful to see the expenditure of each of the  global region as defined by the World Health Organization, which are defined as follows: 
 
@@ -43,7 +45,7 @@ As seen in the image above, more developed countries tend to have a greater perc
 
 # Impact of Hospital Access
 
-[div style:`{color: '#003366'}`]
+[div style:`{color: '#003366', backgroundColor: '#fbfbfb', padding: '5px'}`]
 ### “The United States has the highest healthcare expenditure of $10966 per capita among all countries considered”
 [/div]
 
@@ -55,7 +57,7 @@ The first visualization is a representation of the overall healthcare expenditur
 [br /] 
 Looking at the healthcare expenditure per capita values for each of the countries above, it is clear that the United States has the highest healthcare expenditure from a global standpoint.  To understand the impact of healthcare expenditure, we can compare it with the cost of living for each of the countries being compared. The cost of living index is an indicator of how much goods and services cost. 
 
-[div style:`{color: '#003366'}`]
+[div style:`{color: '#003366', backgroundColor: '#fbfbfb', padding: '5px'}`]
 ### “Within the US, Texas has the most extensive hospital access and a below-average cost of living index indicating that the cost of living and healthcare access aren’t correlated” 
 [/div]
 
@@ -65,7 +67,7 @@ From this visualization, it is clear that the US has the highest average healthc
 
 # Impact of Health Costs via Health Expenditure 
 
-[div style:`{color: '#003366'}`]
+[div style:`{color: '#003366', backgroundColor: '#fbfbfb', padding: '5px'}`]
 ### “Despite the United States spending nearly twice as much as Canada on health expenditure per capita, the United States has three times the costs of medicine than Canada”
 [/div]
 
@@ -97,7 +99,9 @@ Since many European countries and Canada have universal healthcare but have a si
 
 *Comparison of the individual European countries, Canada, and the United States. A trendline was made 
 for individual European countries. Health expenditure per capita and medicine price ratio are from 2019.*
+
 [br /] 
+
 Despite the United States spending nearly twice as much as Canada on health expenditure per capita, the United States has three times the costs of medicine than Canada. However, looking at another lens can make sense of this trend. A possibility is that because the cost of medicine is high, then the country may have to invest more in health expenditure per capita. This can be seen in the positive trend occurring with the individual European countries where the higher the spending in health per capita, then the higher the drug price ratio. It was initially theorized that if a country doesn’t spend a low amount of money on health expenditure, then the country may not be able to help the population be able to afford medicine. Does the same theory apply to developing countries?
 
 [FullWidth]
